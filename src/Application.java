@@ -14,24 +14,30 @@ public class Application {
 			System.out.println("0. Exit");
 			System.out.println("\nEnter a number to select your operation: ");
 			int choice = scanner.nextInt();
-			
-			switch(choice) {
+
+			switch (choice) {
 			case 0:
 				System.out.println("Exiting...");
 				scanner.close();
 				return;
 			case 1:
 				managePetProfile(scanner);
+				break;
 			case 2:
 				manageCareInstructions(scanner);
+				break;
 			case 3:
 				manageClientProfile(scanner);
+				break;
+			default:
+				System.out.println("Invalid choice.");
+				break;
 			}
-						
+
 		}
 
 	}
-	
+
 	public static void managePetProfile(Scanner scanner) {
 		while (true) {
 			System.out.println("\nManage Pet Profile");
@@ -40,15 +46,15 @@ public class Application {
 			System.out.println("0. Return to main menu");
 			System.out.println("Enter your choice: ");
 			int choice = scanner.nextInt();
-			
-			switch(choice) {
+
+			switch (choice) {
 			case 0:
-				return; //return to main menu
+				return; // return to main menu
 			case 1:
-				//TODO
+				// TODO
 				break;
 			case 2:
-				//TODO
+				// TODO
 				break;
 			default:
 				System.out.println("Invalid choice.");
@@ -56,7 +62,7 @@ public class Application {
 			}
 		}
 	}
-	
+
 	public static void manageCareInstructions(Scanner scanner) {
 		while (true) {
 			System.out.println("\nManage Care Instructions");
@@ -65,23 +71,23 @@ public class Application {
 			System.out.println("0. Return to main menu");
 			System.out.println("Enter your choice: ");
 			int choice = scanner.nextInt();
-			
-			switch(choice) {
+
+			switch (choice) {
 			case 0:
-				return; //return to main menu
+				return; // return to main menu
 			case 1:
-				//TODO
+				// TODO
 				break;
 			case 2:
-				//TODO
+				// TODO
 				break;
 			default:
 				System.out.println("Invalid choice.");
-				break; 
+				break;
 			}
 		}
 	}
-	
+
 	private static void manageClientProfile(Scanner scanner) {
 		while (true) {
 			System.out.println("\nManage Care Profile");
@@ -90,19 +96,19 @@ public class Application {
 			System.out.println("0. Return to main menu");
 			System.out.println("Enter your choice: ");
 			int choice = scanner.nextInt();
-			
-			switch(choice) {
+
+			switch (choice) {
 			case 0:
-				return; //return to main menu
+				return; // return to main menu
 			case 1:
-				//TODO
+				// TODO
 				break;
 			case 2:
-				//TODO
+				// TODO
 				break;
 			default:
 				System.out.println("Invalid choice.");
-				break; 
+				break;
 			}
 		}
 	}
